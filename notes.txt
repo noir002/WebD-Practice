@@ -1,0 +1,67 @@
+API...7 types
+4 important: GET(64 BITS, 256 CHARS),..to get data
+            POST(128 BITS), to put data in header with encrypted,hidden manner)
+            PUT,  (change, modify )
+            DELETE 
+
+
+Fetch(it is a class), Axios(easy, not so lengthy alternative of fetch -> external package) to use these methods 
+
+
+JavaScript me asynchronous programming ka kaam Promises aur Async/Await se hota hai. 
+Yeh dono tarike future me complete hone wale tasks ko handle karne ke liye use hote hain.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Asyncronous: Process lagataar nhi hoga, beech beech mein asyncronous ho jaega
+async aur await Promises ka hi ek aur aasan tareeka hai jo clean aur readable code likhne me madad karta hai.
+Asynchronous means that things can happen independently of the main program flow
+
+jS acts both as synchronous and asyncronous ...like if there is a fcn, where we have to wait, by default JS won't wait for it to 
+complete and will jump towards other task.
+
+
+Other asyncronous tasks:
+- setTimeout
+- setsetInterval()
+- fetch
+- Axios
+
+//ways to make these async task synchronous
+- Promise
+- then
+- async/await
+
+
+Async Function: Declares an asynchronous function.
+Await: Pauses the execution of an async function until the promise is resolved...await kr denge ...like jab tak yeh execute ha ho , tab tak aa ge run na ho
+_await directly use nhi kr kr sakte, uske liye async use krna pdega
+
+async function fetchData() {
+    const response = await fetch('<https://api.example.com/data>');
+    const data = await response.json();
+    console.log(data);
+}
+fetchData();
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Promises: Promise krta hai jaise hi event aa jaega, waise hi wo us task ko aage bdha doonga, tab tak aap doosre task pr continue karo.
+-pending:(neither resolve nor reject)
+-resolve (jab data aa jae, condition fullfill ho jae) => use  .then()
+-reject  (agar data fetch krte mein fullfill nhi hua ) => use  .catch()
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+callBack: jab ek element function k andar bhi ek function ke tarah hi call ho rha hai
+
+
+
+
+
+
+HW: Create AI Powered Chrome Extension _(use Gemini API Keys, free of cost)
